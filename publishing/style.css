@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+/* header */
+header {
+  padding: 2rem 2rem;
+  background-color: rgba(16, 28, 30, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  margin: 0 1rem;
+  transition: transform 0.1s ease-in-out;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  color: #638b9a;
+  transform: scale(1.1);
+}
+
+/* main */
+section {
+  border: 1px solid green;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+/* main - home section */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -10;
+}
+
+.greeting {
+  top: 0;
+  left: 0;
+  font-size: 4rem;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+
+.greeting-intro {
+  margin-bottom: 4rem;
+}
+
+/* main - about section */
+
+.about-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-profile {
+  padding: 5rem;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-title {
+  color: rgb(107, 107, 107);
+  font-family: 'Krona One', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+.about-desc {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.about-image {
+  margin-left: 1.5rem;
+}
+
+.about-image img {
+  max-width: 80%;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-desc {
+    max-width: 420px;
+    margin-top: 2rem;
+  }
+
+  .about-image {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+  }
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin: 1.5rem;
+}
