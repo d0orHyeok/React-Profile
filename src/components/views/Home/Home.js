@@ -4,7 +4,7 @@ import video from '../../../assets/video/space.mp4';
 
 function Home() {
   return (
-    <section className={styles.home}>
+    <section id="home" className={styles.home}>
       {/* Background Video */}
       <video className={styles['video-background']} muted loop autoPlay>
         <source src={video} />

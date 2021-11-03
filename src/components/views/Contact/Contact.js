@@ -35,7 +35,7 @@ function Contact() {
   ));
 
   return (
-    <section>
+    <section id="contact">
       <div className={styles.container}>
         <div className={styles.title}>
           <h2 className="heading">CONTACT</h2>

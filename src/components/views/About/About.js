@@ -8,7 +8,7 @@ import profileImg from '../../../assets/img/sample-profile.png';
 
 function About() {
   return (
-    <section>
+    <section id="about">
       <div className={styles.container}>
         <div className={styles.profile}>
           <div className={styles.contents}>
@@ -44,7 +44,7 @@ function About() {
             </ul>
           </div>
           <div className={styles.image}>
-            <img src={profileImg} alt="profile image" />
+            <img src={profileImg} alt="profile" />
           </div>
         </div>
       </div>

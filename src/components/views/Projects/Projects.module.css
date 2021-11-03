@@ -20,6 +20,10 @@
   margin: 3rem;
 }
 
+.wrapper-right {
+  flex-direction: row-reverse;
+}
+
 .image {
   width: 70%;
 }
@@ -29,10 +33,14 @@
 }
 
 .info {
-  margin-left: 1rem;
+  margin: 0 0 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.info-right {
+  margin: 0 1rem 0 0;
 }
 
 .content {

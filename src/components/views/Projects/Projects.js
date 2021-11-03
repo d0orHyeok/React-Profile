@@ -1,7 +1,7 @@
 import React from 'react';
 import cn from 'classnames';
 // import styles from './Projects.module.css';
-import styles from './test.module.css';
+import styles from './Projects.module.css';
 
 function Projects() {
   const projectData = [
@@ -53,7 +53,7 @@ function Projects() {
   });
 
   return (
-    <section className={styles.section}>
+    <section id="projects" className={styles.section}>
       <h1 className={cn(styles.container, 'heading')}>PROJECTS</h1>
       <div className={styles.container}>{projectCards}</div>
     </section>
