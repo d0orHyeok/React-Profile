@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root {
+  --backgournd-color: black;
+  --font-color: rgba(255, 255, 255, 0.85);
+  --header-color: rgba(37, 65, 70, 0.6);
+  --hover-color: #638b9a;
+  --title-color: #a5c8df;
+  --heading-color: rgb(118, 127, 130);
+  --main-font: 'Do Hyeon', sans-serif;
+  --heading-font: 'Krona One', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--backgournd-color);
+  color: var(--font-color);
+  font-family: var(--main-font);
+}
+
+/* common css */
+:global .heading {
+  font-size: 5rem;
+  text-shadow: var(--font-color) 2px 2px 2px;
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+section {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  :global .heading {
+    font-size: 4rem;
+  }
+
+  section {
+    width: 100vw;
+    height: auto;
+    border: 1px solid green;
+  }
+}
+
+/* SmartPhone */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  :global .heading {
+    font-size: 2rem;
+  }
+}

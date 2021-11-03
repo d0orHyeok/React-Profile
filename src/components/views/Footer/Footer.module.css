@@ -1,0 +1,16 @@
+footer {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+}
+
+/* SmartPhone */
+@media screen and (max-width: 768px) {
+  /* Footer */
+  footer {
+    font-size: 0.5rem;
+  }
+}
