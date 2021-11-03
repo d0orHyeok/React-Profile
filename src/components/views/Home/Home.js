@@ -1,11 +1,10 @@
 import React from 'react';
-import Typist from 'react-typist';
 import styles from './Home.module.css';
 import video from '../../../assets/video/space.mp4';
 
 function Home() {
   return (
-    <section className={styles.Home}>
+    <section className={styles.home}>
       {/* Background Video */}
       <video className={styles['video-background']} muted loop autoPlay>
         <source src={video} />

@@ -1,6 +1,6 @@
-footer {
+.footer {
   text-align: center;
-  margin: 1.5rem;
+  margin: 3rem;
 }
 
 /* Tablet */
@@ -10,7 +10,7 @@ footer {
 /* SmartPhone */
 @media screen and (max-width: 768px) {
   /* Footer */
-  footer {
+  .footer {
     font-size: 0.5rem;
   }
 }

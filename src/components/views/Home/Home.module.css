@@ -23,7 +23,7 @@
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
-  .home-section {
+  .home {
     height: 600px;
   }
 
